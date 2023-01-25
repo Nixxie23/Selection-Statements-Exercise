@@ -7,7 +7,8 @@ namespace SelectionStatementExercise
         static void Main(string[] args)
         {
             //EXERCISE ONE
-            var favNum = 23;
+            var r = new Random();
+            var favNum = r.Next(0,100);
             Console.WriteLine("Can you guess my favorite number? Guess a number between 0 and 100!");
             var userGuess = int.Parse(Console.ReadLine());
             if (userGuess == favNum) 
